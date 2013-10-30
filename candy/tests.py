@@ -6,6 +6,7 @@ Replace this with more appropriate tests for your application.
 """
 
 from django.test import TestCase
+from candy.candyownmodels import CandyOwnModels
 
 
 class CandyCrazyTest(TestCase):
@@ -13,13 +14,17 @@ class CandyCrazyTest(TestCase):
         """
         Tests that 5 + 1 always equals 6.
         """
-        self.assertEqual(5 + 1, 6)
+        c = CandyOwnModels()
+        six = c.no_model_here_but_an_int()
+        self.assertEqual(5 + 1, six)
 
     def test_awesome_flavour(self):
         """
-        Tests that 'choclate' + '&' + 'honey' always equals 'chocolate&honey'.
+        Tests that 'chocolate' + '&' + 'honey' always equals 'chocolate&honey'.
         """
-        self.assertEqual('chocolate' + '&' + 'honey', 'chocolate&honey')
+        c = CandyOwnModels()
+        chocolate = c.no_model_here_but_an_string()
+        self.assertEqual(chocolate + '&' + 'honey', 'chocolate&honey')
 
     def test_horrible_flavour(self):
         """
