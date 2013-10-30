@@ -1,4 +1,8 @@
+.codeintel/
+
 *.log
 *.pot
 *.pyc
 local_settings.py
+*.sublime-project
+*.sublime-workspace
