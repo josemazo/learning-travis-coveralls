@@ -21,7 +21,7 @@ class CandyCrazyTest(TestCase):
         """
         self.assertEqual('chocolate' + '&' + 'honey', 'chocolate&honey')
 
-    def text_horrible_flavour(self):
+    def test_horrible_flavour(self):
         """
         Tests that 'IceKing' is a fake man.
         """
